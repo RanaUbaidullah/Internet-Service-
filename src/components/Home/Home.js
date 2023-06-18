@@ -20,10 +20,7 @@ function Home() {
 		
 
 
-
-	{/* <!-- Navbar --> */}
-    <Navbar/>
-	{/* <!-- Navbar --> */}
+    <Navbar></Navbar>
 
 
 
@@ -35,15 +32,15 @@ function Home() {
 					<h1>Dashboard</h1>
 					<ul className="breadcrumb">
 						<li>
-							<a href="#">Dashboard</a>
+							<a href="@">Dashboard</a>
 						</li>
 						<li><i className='bx bx-chevron-right' ></i></li>
 						<li>
-							<a className="active" href="#">Home</a>
+							<a className="active" href="@">Home</a>
 						</li>
 					</ul>
 				</div>
-				<a href="#" className="btn-download">
+				<a href="@" className="btn-download">
 					<i className='bx bxs-cloud-download' ></i>
 					<span className="text">Download PDF</span>
 				</a>
@@ -92,7 +89,7 @@ function Home() {
 						<tbody>
 							<tr>
 								<td>
-									<img src="img/people.png"/>
+									<img alt="img" src="img/people.png"/>
 									<p>John Doe</p>
 								</td>
 								<td>01-10-2021</td>
@@ -100,7 +97,7 @@ function Home() {
 							</tr>
 							<tr>
 								<td>
-									<img src="img/people.png"/>
+									<img alt="img" src="img/people.png"/>
 									<p>John Doe</p>
 								</td>
 								<td>01-10-2021</td>
@@ -108,7 +105,7 @@ function Home() {
 							</tr>
 							<tr>
 								<td>
-									<img src="img/people.png"/>
+									<img alt="img" src="img/people.png"/>
 									<p>John Doe</p>
 								</td>
 								<td>01-10-2021</td>
@@ -116,7 +113,7 @@ function Home() {
 							</tr>
 							<tr>
 								<td>
-									<img src="img/people.png"/>
+									<img alt="img" src="img/people.png"/>
 									<p>John Doe</p>
 								</td>
 								<td>01-10-2021</td>
@@ -124,7 +121,7 @@ function Home() {
 							</tr>
 							<tr>
 								<td>
-									<img src="img/people.png"/>
+									<img alt="img" src="img/people.png"/>
 									<p>John Doe</p>
 								</td>
 								<td>01-10-2021</td>
@@ -167,6 +164,9 @@ function Home() {
 		{/* <!-- MAIN --> */}
 	</section>
 	{/* <!-- CONTENT --> */}
+
+	<script src="./script.js"></script>
+
     </>
   )
 }
