@@ -130,7 +130,7 @@ function Home() {
 						</tbody>
 					</table>
 				</div>
-				{/* <div className="todo">
+				<div className="todo">
 					<div className="head">
 						<h3>Todos</h3>
 						<i className='bx bx-plus' ></i>
@@ -158,7 +158,7 @@ function Home() {
 							<i className='bx bx-dots-vertical-rounded' ></i>
 						</li>
 					</ul>
-				</div> */}
+				</div>
 			</div>
 		</main>
 		{/* <!-- MAIN --> */}
