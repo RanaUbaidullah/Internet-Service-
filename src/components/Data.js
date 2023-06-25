@@ -2,6 +2,7 @@ import {
   useGetAllProductsQuery,
   useGetProductQuery,
 } from "../features/apiSlice";
+import "./style.css";
 export const Data = () => {
   const {
     data: allProductsData,
@@ -15,13 +16,22 @@ export const Data = () => {
   console.log(singleProductData);
 
   if (isLoading) return <h1> Loading...</h1>;
-  return <div> Data: 
-    {allProductsData.products.map((data)=>(
+  return  <div className="container">
+    {allProductsData.products.map((data) => (
       <>
-      <h1>Title: {data.title}</h1>
-      <h2>Description: {data.description}</h2>
-      <h5>Category: {data.category}</h5>
+        <div className="card">
+          <div className="card-image">
+            <img src={data.images[0]} alt="..." />
+            <i className="bx bx-star"></i>
+          </div>
+          <div className="card-content">
+            <h3> {data.title}</h3>
+            <p>{data.description}</p>
+            <button className="add-to-cart">Add To Cart</button>
+          </div>
+        </div>
       </>
     ))}
   </div>;
+
 };
